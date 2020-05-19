@@ -36,6 +36,10 @@ set completeopt=preview,menu
 " 去掉输入错误的提示声音
 set noeb
 
+
+set cul
+hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
 inoremap <C-o> <Esc>  
 inoremap <C-l> <Right>
 inoremap <C-h> <Left>
@@ -47,7 +51,8 @@ inoremap <C-f> <PageDown>
 
 
 
-
+call pathogen#infect()
+call pathogen#helptags()
 
 " Plugins
-
+colorscheme dracula
